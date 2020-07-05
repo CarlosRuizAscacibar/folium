@@ -94,6 +94,7 @@ def path_options(line=False, radius=False, **kwargs):
         'fillOpacity': kwargs.pop('fill_opacity', 0.2),
         'fillRule': kwargs.pop('fill_rule', 'evenodd'),
         'bubblingMouseEvents': kwargs.pop('bubbling_mouse_events', True),
+        'tags': kwargs.pop('tags', True),
     }
     default.update(extra_options)
     return default
